@@ -1,4 +1,4 @@
-<!-- index.html -->
+<!-- ===================== index.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,20 +19,19 @@
 
   <main>
 
-    <!-- Long Profile Box -->
+    <!-- LONG PROFILE BOX -->
     <div class="profile-box">
       <img src="baby.jpg" alt="Baby Picture">
     </div>
 
+    <!-- ABOUT + FAVORITES -->
     <div class="row">
 
-      <!-- About Me -->
       <div class="box">
         <h2>About Me</h2>
         <p>Hi! This is where I’ll write about myself.</p>
       </div>
 
-      <!-- Favorites -->
       <div class="box">
         <h2>My Dunkin Favorites</h2>
         <ul>
@@ -44,7 +43,7 @@
 
     </div>
 
-    <!-- 4 Website Links -->
+    <!-- 4 WEBSITE LINKS -->
     <div class="links">
       <a href="https://example.com">Web 1</a>
       <a href="https://example.com">Web 2</a>
@@ -58,7 +57,7 @@
 </html>
 
 
-<!-- page2.html -->
+<!-- ===================== page2.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,18 +66,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Page 2</h1>
-    <a href="index.html">Back Home</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="page3.html">Page 3</a>
+    </nav>
   </header>
+
   <main>
     <p>This is your second page.</p>
   </main>
+
 </body>
 </html>
 
 
-<!-- page3.html -->
+<!-- ===================== page3.html ===================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,29 +92,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Page 3</h1>
-    <a href="index.html">Back Home</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="page2.html">Page 2</a>
+    </nav>
   </header>
+
   <main>
     <p>This is your third page.</p>
   </main>
+
 </body>
 </html>
 
 
-/* style.css */
+/* ===================== style.css ===================== */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
+  min-height: 100vh;
 
-  /* Dunkin striped background */
+  /* DUNKIN STRIPES (ORANGE + MAGENTA) */
   background: repeating-linear-gradient(
-    45deg,
+    90deg,
     #ff6a00,
-    #ff6a00 40px,
-    #e11383 40px,
-    #e11383 80px
+    #ff6a00 80px,
+    #e11383,
+    #e11383 160px
   );
 }
 
@@ -127,48 +140,55 @@ nav a {
   font-weight: bold;
 }
 
+/* LONG PROFILE BOX */
 .profile-box {
-  width: 70%;
-  margin: 20px auto;
+  width: 75%;
+  margin: 25px auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255,255,255,0.95);
   border-radius: 15px;
   text-align: center;
 }
 
 .profile-box img {
-  max-width: 220px;
-  border-radius: 10px;
+  max-width: 250px;
+  border-radius: 12px;
 }
 
+/* SIDE BOXES */
 .row {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
 .box {
-  width: 220px;
+  width: 250px;
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 12px;
 }
 
+/* LINK BUTTONS */
 .links {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin: 30px;
+  flex-wrap: wrap;
 }
 
 .links a {
   background-color: #e11383;
   color: white;
-  padding: 12px;
+  padding: 12px 15px;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .links a:hover {
   background-color: #ff6a00;
+  transform: scale(1.05);
 }
