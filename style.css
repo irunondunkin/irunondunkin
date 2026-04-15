@@ -1,85 +1,13 @@
 
-/* ===================== style.css ===================== */
+body {
+  margin: 0;
+  height: 100vh;
+
   background: repeating-linear-gradient(
     90deg,
-    #ff6a00,
+    #ff6a00,   /* orange */
     #ff6a00 80px,
-    #e11383,
+    #e11383,   /* pink/magenta */
     #e11383 160px
-  ) !important;
-}
-
-header {
-  background-color: #ff6a00;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-
-nav a {
-  margin: 10px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.profile-box {
-  width: 70%;
-  margin: 20px auto;
-  padding: 15px;
-  background-color: white;
-  border-radius: 15px;
-  text-align: center;
-}
-
-.profile-box img {
-  max-width: 200px;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.box {
-  width: 250px;
-  padding: 15px;
-  background-color: white;
-  border-radius: 10px;
-}
-
-/* SMALL IMAGES */
-.fav-list {
-  list-style: none;
-  padding: 0;
-}
-
-.fav-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.fav-img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  display: block;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.links a {
-  background-color: #e11383;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 8px;
+  );
 }
