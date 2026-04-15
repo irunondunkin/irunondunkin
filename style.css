@@ -1,4 +1,4 @@
-/* CLEAN MODERN BACKGROUND (no ugly stripes) */
+/* BACKGROUND */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -13,60 +13,85 @@ header {
   padding: 25px;
   font-size: 32px;
   font-weight: bold;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: white;
+  padding: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff6f00;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* GRID LAYOUT */
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
   padding: 40px;
   max-width: 1000px;
   margin: auto;
 }
 
-/* CARD */
+/* CARDS */
 .card {
   background: white;
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
 
-/* IMAGE */
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-/* TEXT */
 .card h2 {
   text-align: center;
-  margin: 12px 0 5px;
   color: #ff6f00;
+  margin: 10px 0 5px;
 }
 
 .card p {
   text-align: center;
-  padding: 0 12px 18px;
+  padding-bottom: 15px;
   color: #444;
+}
+
+/* ABOUT BOX */
+.about-box {
+  max-width: 650px;
+  margin: 70px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 18px;
   background: #ff6f00;
   color: white;
-  margin-top: 30px;
-  font-weight: bold;
+  padding: 15px;
+  margin-top: 40px;
 }
