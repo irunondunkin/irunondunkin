@@ -1,71 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dunkin Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dunkin Menu Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff3e6;
+    }
+
+    header {
+      background-color: #ff6f00;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px 0;
+    }
+
+    .card p {
+      padding: 0 10px 15px;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ff6f00;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-  <h1>My Dunkin Website</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="page2.html">Page 2</a>
-    <a href="page3.html">Page 3</a>
-  </nav>
+  Dunkin Menu
 </header>
 
-<main>
+<div class="container">
 
-  <!-- PROFILE -->
-  <div class="profile-box">
-    <img src="baby.jpg" alt="Baby Picture">
+  <!-- Strawberry Dragonfruit Refresher -->
+  <div class="card">
+    <img src="https://source.unsplash.com/600x400/?strawberry,dragonfruit,drink" alt="Strawberry Dragonfruit Refresher">
+    <h2>Strawberry Dragonfruit Refresher</h2>
+    <p>A refreshing iced drink made with strawberry and dragonfruit flavors.</p>
   </div>
 
-  <!-- ABOUT + FAVORITES -->
-  <div class="row">
-
-    <div class="box">
-      <h2>About Me</h2>
-      <p>This is where I write about myself.</p>
-    </div>
-
-    <div class="box">
-      <h2>My Dunkin Favorites</h2>
-
-      <ul class="fav-list">
-
-        <li>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Strawberry_drink.jpg" class="fav-img">
-          <span>Strawberry Dragonfruit Refresher with Green Tea</span>
-        </li>
-
-        <li>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Glazed-Donut.jpg" class="fav-img">
-          <span>Glazed Donut</span>
-        </li>
-
-        <li>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Croissant_sandwich.jpg" class="fav-img">
-          <span>Ham and Swiss Croissant</span>
-        </li>
-
-      </ul>
-
-    </div>
-
+  <!-- Ham & Swiss Croissant -->
+  <div class="card">
+    <img src="https://source.unsplash.com/600x400/?ham,swiss,croissant,sandwich" alt="Ham and Swiss Croissant">
+    <h2>Ham & Swiss Croissant</h2>
+    <p>Buttery croissant filled with ham and melted Swiss cheese.</p>
   </div>
 
-  <!-- LINKS -->
-  <div class="links">
-    <a href="#">Web 1</a>
-    <a href="#">Web 2</a>
-    <a href="#">Web 3</a>
-    <a href="#">Web 4</a>
-  </div>
+</div>
 
-</main>
+<footer>
+  © Dunkin Style Menu Website
+</footer>
 
 </body>
 </html>
