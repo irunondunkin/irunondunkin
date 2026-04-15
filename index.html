@@ -1,86 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dunkin Menu Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dunkin Menu</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #fff3e6;
-    }
+<style>
+/* BACKGROUND (Dunkin theme + cups pattern) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff3e6;
+  background-image: url("https://www.transparenttextures.com/patterns/coffee.png");
+}
 
-    header {
-      background-color: #ff6f00;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-    }
+/* HEADER */
+header {
+  background: #ff6f00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      gap: 20px;
-    }
+/* GRID */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px;
+}
 
-    .card {
-      background: white;
-      width: 300px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      overflow: hidden;
-      text-align: center;
-    }
+/* CARD */
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
 
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
+.card:hover {
+  transform: scale(1.05);
+}
 
-    .card h2 {
-      margin: 10px 0 5px 0;
-    }
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-    .card p {
-      padding: 0 10px 15px;
-      color: #444;
-    }
+.card h2 {
+  margin: 10px 0 5px;
+  text-align: center;
+}
 
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #ff6f00;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
+.card p {
+  padding: 0 10px 15px;
+  text-align: center;
+  color: #444;
+}
+
+/* FOOTER */
+footer {
+  background: #ff6f00;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  Dunkin Menu
+  Dunkin Menu ☕🍩
 </header>
 
 <div class="container">
 
   <!-- Strawberry Dragonfruit Refresher -->
   <div class="card">
-    <img src="https://source.unsplash.com/600x400/?strawberry,dragonfruit,drink" alt="Strawberry Dragonfruit Refresher">
+    <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25" alt="Strawberry Dragonfruit Refresher">
     <h2>Strawberry Dragonfruit Refresher</h2>
-    <p>A refreshing iced drink made with strawberry and dragonfruit flavors.</p>
+    <p>A refreshing iced drink with strawberry & dragonfruit flavors.</p>
   </div>
 
   <!-- Ham & Swiss Croissant -->
   <div class="card">
-    <img src="https://source.unsplash.com/600x400/?ham,swiss,croissant,sandwich" alt="Ham and Swiss Croissant">
+    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a" alt="Ham and Swiss Croissant">
     <h2>Ham & Swiss Croissant</h2>
     <p>Buttery croissant filled with ham and melted Swiss cheese.</p>
   </div>
@@ -88,7 +101,7 @@
 </div>
 
 <footer>
-  © Dunkin Style Menu Website
+  Made with Dunkin vibes ☕
 </footer>
 
 </body>
