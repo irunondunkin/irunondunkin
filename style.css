@@ -1,9 +1,12 @@
 
 /* ===================== style.css ===================== */
+  background: repeating-linear-gradient(
+    90deg,
+    #ff6a00,
     #ff6a00 80px,
     #e11383,
     #e11383 160px
-  );
+  ) !important;
 }
 
 header {
@@ -20,55 +23,63 @@ nav a {
   font-weight: bold;
 }
 
-/* LONG PROFILE BOX */
 .profile-box {
-  width: 75%;
-  margin: 25px auto;
-  padding: 20px;
-  background-color: rgba(255,255,255,0.95);
+  width: 70%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: white;
   border-radius: 15px;
   text-align: center;
 }
 
 .profile-box img {
-  max-width: 250px;
-  border-radius: 12px;
+  max-width: 200px;
 }
 
-/* SIDE BOXES */
 .row {
   display: flex;
   justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .box {
   width: 250px;
   padding: 15px;
-  background-color: rgba(255,255,255,0.95);
-  border-radius: 12px;
+  background-color: white;
+  border-radius: 10px;
 }
 
-/* LINK BUTTONS */
+/* SMALL IMAGES */
+.fav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.fav-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.fav-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  display: block;
+}
+
 .links {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin: 30px;
-  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .links a {
   background-color: #e11383;
   color: white;
-  padding: 12px 15px;
+  padding: 10px;
   text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.links a:hover {
-  background-color: #ff6a00;
-  transform: scale(1.05);
+  border-radius: 8px;
 }
